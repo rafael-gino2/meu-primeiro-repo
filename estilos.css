@@ -1,0 +1,237 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+
+}
+
+body {
+    background-color: #242424;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+
+/* header com opções */
+header {
+    width: 100%;
+    background-color: #383838;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.menu li {
+    display: inline-block;
+    margin: 0 10px;
+    text-align: left;
+}
+
+.menu li a {
+    font-size: 17px;
+    color: snow;
+    padding: 20px 20px;
+    font-style: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu li a:hover {
+    color: #beb310;
+}
+
+
+/* introdução do site */
+.introduction {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    font-size: 55px;
+    color: #beb310;
+}
+
+.introduction p {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+
+/* pelé historia */
+
+.container-pele h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #beb310;
+    font-size: 30px;
+    margin-top: 540px;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+.container-pele img {
+    width: 590px;
+    height: 450px;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-left: 360px;
+}
+
+.container-pele p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #beb310;
+    font-size: 20px;
+    margin-top: 40px;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+/* estilo do titulo e box dos jogadores */
+.container h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    color: #beb310;
+    margin-bottom: 10px;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+.container {
+    width: 90%;
+    padding: 10px;
+    margin: 100px auto;
+    padding-left: 15px;
+}
+
+.box img {
+    width: 210px;
+    height: 210px;
+    border-radius: 15px;
+}
+
+.box {
+    width: 210px;
+    height: 210px;
+    float: left;
+    margin: 10px 10px;
+    transition: 1s;
+}
+
+.box:hover {
+    transform: scale(1.1);
+}
+
+
+/* estilo dos slides de fotos */
+
+.content-title {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #beb310;
+    font-size: 20px;
+    margin-top: 140px;
+    margin-left: 90px;
+    margin-right: 90px;
+    text-align: center;
+}
+
+
+.content {
+    height: 520px;
+    width: 935px;
+    border-radius: 20px;
+    overflow: hidden;
+    position: absolute;
+    top: 370%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.navigation {
+    position: absolute;
+    bottom: 20px;
+    left: 470px;
+    transform: translate(-50%);
+    display: flex;
+}
+
+.bar {
+    width: 70px;
+    height: 17px;
+    border: 2px solid #beb310;
+    margin: 6px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.bar:hover {
+    background-color: #beb310;
+}
+
+input {
+    display: none;
+}
+
+.slides {
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slide {
+    width: 20%;
+    transition: .5s;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+}
+
+#slide1:checked~.s1 {
+    margin-left: 0%;
+}
+
+#slide2:checked~.s1 {
+    margin-left: -20%;
+}
+
+#slide3:checked~.s1 {
+    margin-left: -40%;
+}
+
+#slide4:checked~.s1 {
+    margin-left: -60%;
+}
+
+#slide5:checked~.s1 {
+    margin-left: -80%;
+}
+
+
+/* estilo das redes sociais laterais */
+.icons-rs {
+    top: 50%;
+    left: 0%;
+    transform: translateY(-50%);
+    position: fixed;
+    z-index: 100;
+}
+
+.icons-rs ul {
+    padding: initial;
+}
+
+.icons-rs ul li {
+    height: 40px;
+    width: 40px;
+    list-style-type: none;
+    padding-left: 8px;
+    padding-top: 8px;
+    margin-top: 5px;
+    background: #beb310;
+}
